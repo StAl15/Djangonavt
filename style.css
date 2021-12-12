@@ -1,11 +1,8 @@
 body {
+    display: block;
     background-image: url('/images/Group\ 22.png');
     position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-
-div.column {}
-
-figure.fluidratio {}
