@@ -24,7 +24,9 @@
 }
 
 .home_photo {
+    width: 100vw;
     padding-bottom: 56.25%;
+    height: 100vh;
 }
 
 .home img {
@@ -47,4 +49,10 @@
     align-items: center;
     z-index: 3;
     font-family: sans-serif;
+}
+
+.live_stream {
+    background-color: black;
+    width: 70vw;
+    max-height: 70vh;
 }
