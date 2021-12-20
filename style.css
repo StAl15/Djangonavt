@@ -12,7 +12,7 @@
     .home {
         max-height: 100vh;
         background: url(images/Group\ 22.png) center/cover no-repeat;
-        overflow: hidden;
+        overflow: auto;
         position: relative;
     }
     
@@ -69,6 +69,18 @@
     }
     
     .sensors_1 {
+        background-color: #333434;
+        border-radius: 20px;
+        box-sizing: border-box;
+        padding: 20px;
+        width: 25vw;
+        height: 50vh;
+        border-color: white;
+        border-style: solid;
+        border-width: 2px;
+    }
+    
+    .sensors_2 {
         background-color: #333434;
         border-radius: 20px;
         box-sizing: border-box;
