@@ -98,3 +98,16 @@
         border-style: solid;
         border-width: 2px;
     }
+    
+    .title_stream {
+        box-sizing: border-box;
+        border-radius: 15px;
+        border-color: #2EE7D7;
+        border-style: solid;
+        border-width: 2px;
+        size: 10pt;
+        color: white;
+        padding: 10px;
+        font-size: 15pt;
+        font-weight: lighter;
+    }
