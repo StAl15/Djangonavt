@@ -155,5 +155,6 @@
         .title_curr {
             color: white;
             font-weight: lighter;
-            margin: 12px;
+            margin-top: 10px;
+            margin-left: 6px;
         }
