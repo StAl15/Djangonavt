@@ -158,3 +158,9 @@
             margin-top: 10px;
             margin-left: 6px;
         }
+        
+        .control {
+            background: url(images/up.png);
+            height: 35px;
+            width: 35px;
+        }
