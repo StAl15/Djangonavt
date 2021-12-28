@@ -58,14 +58,15 @@ body {
     border-radius: 20px;
     box-sizing: border-box;
     padding: 20px;
-    width: 75vw;
+    width: 70vw;
     margin-right: auto;
     height: 50vh;
     border-color: white;
     border-style: solid;
     border-width: 2px;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-bottom: 20px;
+    margin-right: 40px;
 }
 
 .figures {
@@ -80,8 +81,8 @@ body {
     border-radius: 20px;
     box-sizing: border-box;
     padding: 10px;
-    width: 30vw;
-    height: 50vh;
+    width: 60vw;
+    height: 20vh;
     border-color: white;
     border-style: solid;
     border-width: 2px;
@@ -98,6 +99,7 @@ body {
     border-color: white;
     border-style: solid;
     border-width: 2px;
+    margin-top: 20px;
 }
 
 .in_sensors_2 {
@@ -109,7 +111,7 @@ body {
     min-width: 10vw;
     height: 12vh;
     margin-top: 10px;
-    margin-right: 7px;
+    margin-right: 57px;
 }
 
 .title_stream {
