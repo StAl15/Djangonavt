@@ -59,8 +59,7 @@ body {
     box-sizing: border-box;
     padding: 20px;
     width: 60vw;
-    margin-right: auto;
-    height: 62vh;
+    height: 64vh;
     border-color: white;
     border-style: solid;
     border-width: 2px;
@@ -71,7 +70,8 @@ body {
 
 .figures {
     display: flex;
-    padding: 10px;
+    padding: 0px;
+    margin-left: 40px;
 }
 
 .sensors_1 {
@@ -81,8 +81,8 @@ body {
     border-radius: 20px;
     box-sizing: border-box;
     padding: 10px;
-    width: 60vw;
-    height: 25vh;
+    width: min-content;
+    height: min-content;
     border-color: white;
     border-style: solid;
     border-width: 2px;
@@ -94,9 +94,8 @@ body {
     border-radius: 20px;
     box-sizing: border-box;
     padding: 10px;
-    width: 20vw;
-    height: 62vh;
-    min-width: 15vw;
+    width: min-content;
+    height: min-content;
     border-color: white;
     border-style: solid;
     border-width: 2px;
@@ -110,9 +109,7 @@ body {
     padding: 10px;
     width: 15vw;
     min-width: 10vw;
-    height: 16vh;
-    margin-top: 0px;
-    margin-right: 57px;
+    height: min-content;
 }
 
 .title_stream {
@@ -131,6 +128,8 @@ body {
 .title_curr {
     color: white;
     font-weight: lighter;
+    margin-top: 7px;
+    margin-bottom: 5px;
 }
 
 .control_push {
@@ -141,8 +140,12 @@ body {
     border-width: 2px;
     padding: 10px;
     width: min-content;
-    color: black;
+    height: min-content;
     background-color: #C4C4C4;
+}
+
+.rects {
+    height: min-content;
 }
 
 .control {
