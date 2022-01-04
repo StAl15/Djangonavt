@@ -13,59 +13,60 @@
 
 
 <body>
-    <img style="z-index: 1; background: url(images/Group\ 22.png) center/cover no-repeat; width: 100vw; height: 100vh;" src="{% static 'main/images/Group 22.png'%}">
-    <div class="home_photo">
-    </div>
-    <div class="home_content">
-        <div class="up_div" style="display: -webkit-box; ">
-            <div style="display: column; ">
-                <div class="live_stream ">
+    <section class="home">
+        <img style="z-index: 1; background: url(images/Group\ 22.png) center/cover no-repeat; width: 100vw; height: 100vh;" src="{% static 'main/images/Group 22.png'%}">
+        <div class="home_photo">
+        </div>
+        <div class="home_content">
+            <div class="up_div" style="display: -webkit-box; ">
+                <div style="display: column; ">
+                    <div class="live_stream ">
 
-                </div>
-                <div class="figures ">
-                    <figure class="sensors_1 ">
-                        <form action="/start" method="post" style="display: flex; margin-top: 0px; ">
-                            {% csrf_token %}
-                            <button href="{% url 'start' %}" class="control_push " type="submit" style="margin-right: 20px; margin-bottom: 0px ">
+                    </div>
+                    <div class="figures ">
+                        <figure class="sensors_1 ">
+                            <form action="/start" method="post" style="display: flex; margin-top: 0px; ">
+                                {% csrf_token %}
+                                <button href="{% url 'start' %}" class="control_push" type="submit" style="margin-right: 20px; margin-bottom: 0px; ">
                                     Старт</button>
-                            <button class="control_push ">
+                                <button class="control_push ">
                                     Стоп</button>
-                        </form>
+                            </form>
 
-                    </figure>
+                        </figure>
 
+                    </div>
                 </div>
+
+                <figure class="sensors_2 ">
+                    <div class="rects_ ">
+                        <figure class="in_sensors_2 ">
+                            <figcaption class="figure-caption text-start " style="font-size: 2vw; font-family: 'Manrope-Semibold'; ">Температура</figcaption>
+                            <figure class="round ">
+                                <h2 class="title_curr ">{{ temperature }}</h2>
+                            </figure>
+                        </figure>
+                        <figure class="in_sensors_2 ">
+                            <figcaption class="figure-caption text-start " style="font-size: 2vw; font-family: 'Manrope-Semibold'; ">Дней работы</figcaption>
+                            <figure class="round ">
+                                <h2 class="title_curr ">{{ quantity_days }}</h2>
+                            </figure>
+                        </figure>
+                        <figure class="in_sensors_2 ">
+                            <figcaption class="figure-caption text-start " style="font-size: 2vw; font-family: 'Manrope-Semibold'; ">Скорость</figcaption>
+                            <figure class="round " style="border-color: aqua; ">
+                                <h2 class="title_curr ">{{ speed }}</h2>
+                            </figure>
+                        </figure>
+                    </div>
+                </figure>
             </div>
 
-            <figure class="sensors_2 ">
-                <div class="rects_ ">
-                    <figure class="in_sensors_2 ">
-                        <figcaption class="figure-caption text-start " style="font-size: 2vw; font-family: 'Manrope-Semibold'; ">Температура</figcaption>
-                        <figure class="round ">
-                            <h2 class="title_curr ">{{ temperature }}</h2>
-                        </figure>
-                    </figure>
-                    <figure class="in_sensors_2 ">
-                        <figcaption class="figure-caption text-start " style="font-size: 2vw; font-family: 'Manrope-Semibold'; ">Дней работы</figcaption>
-                        <figure class="round ">
-                            <h2 class="title_curr ">{{ quantity_days }}</h2>
-                        </figure>
-                    </figure>
-                    <figure class="in_sensors_2 ">
-                        <figcaption class="figure-caption text-start " style="font-size: 2vw; font-family: 'Manrope-Semibold'; ">Скорость</figcaption>
-                        <figure class="round " style="border-color: aqua; ">
-                            <h2 class="title_curr ">{{ speed }}</h2>
-                        </figure>
-                    </figure>
-                </div>
-            </figure>
+            <h2 class="title_stream " style="display:none; ">
+                Трансляция
+            </h2>
+
         </div>
-
-        <h2 class="title_stream " style="display:none; ">
-            Трансляция
-        </h2>
-
-    </div>
 
     </section>
 
