@@ -14,7 +14,8 @@
 
 <body>
     <section class="home">
-        <img style="z-index: 1; background: url(images/Group\ 22.png) center/cover no-repeat; width: 100vw; height: 100vh;" src="{% static 'main/images/Group 22.png'%}">
+
+        <!--<img style="z-index: 1; background: url(images/Group\ 22.png) center/cover no-repeat; width: 100vw; height: 100vh;" src="{% static 'main/images/Group 22.png'%}"> -->
         <div class="home_photo">
         </div>
         <div class="home_content">
@@ -39,25 +40,62 @@
                 </div>
 
                 <figure class="sensors_2 ">
-                    <div class="rects_ ">
-                        <figure class="in_sensors_2 ">
-                            <figcaption class="figure-caption text-start " style="font-size: 2vw; font-family: 'Manrope-Semibold'; ">Температура</figcaption>
-                            <figure class="round ">
-                                <h2 class="title_curr ">{{ temperature }}</h2>
+                    <div class="rects_ " style="display: flex;">
+                        <div style="margin-right: 10px;">
+                            <figure class=" in_sensors_2 ">
+                                <figcaption class="figure-caption text-start " style="font-size: 2vw; font-family: 'Manrope-Semibold'; ">Температура</figcaption>
+                                <figure class="round ">
+                                    <h2 class="title_curr ">{{ temperature }}</h2>
+                                </figure>
                             </figure>
-                        </figure>
-                        <figure class="in_sensors_2 ">
-                            <figcaption class="figure-caption text-start " style="font-size: 2vw; font-family: 'Manrope-Semibold'; ">Дней работы</figcaption>
-                            <figure class="round ">
-                                <h2 class="title_curr ">{{ quantity_days }}</h2>
+                            <figure class="in_sensors_2 ">
+                                <figcaption class="figure-caption text-start " style="font-size: 2vw; font-family: 'Manrope-Semibold'; ">Дней работы</figcaption>
+                                <figure class="round ">
+                                    <h2 class="title_curr ">{{ quantity_days }}</h2>
+                                </figure>
                             </figure>
-                        </figure>
-                        <figure class="in_sensors_2 ">
-                            <figcaption class="figure-caption text-start " style="font-size: 2vw; font-family: 'Manrope-Semibold'; ">Скорость</figcaption>
-                            <figure class="round " style="border-color: aqua; ">
-                                <h2 class="title_curr ">{{ speed }}</h2>
+                            <figure class="in_sensors_2 ">
+                                <figcaption class="figure-caption text-start " style="font-size: 2vw; font-family: 'Manrope-Semibold'; ">Скорость</figcaption>
+                                <figure class="round " style="border-color: aqua; ">
+                                    <h2 class="title_curr ">{{ speed }}</h2>
+                                </figure>
                             </figure>
-                        </figure>
+                            <figure class="in_sensors_2 ">
+                                <figcaption class="figure-caption text-start " style="font-size: 2vw; font-family: 'Manrope-Semibold'; ">Ток клапана</figcaption>
+                                <figure class="round " style="border-color: aqua; ">
+                                    <h2 class="title_curr ">{{ amperage_k }}</h2>
+                                </figure>
+                            </figure>
+                        </div>
+
+                        <div>
+                            <figure class="in_sensors_2 ">
+                                <figcaption class="figure-caption text-start " style="font-size: 2vw; font-family: 'Manrope-Semibold'; ">Давление</figcaption>
+                                <figure class="round " style="border-color: aqua; ">
+                                    <h2 class="title_curr ">{{ pressure }}</h2>
+                                </figure>
+                            </figure>
+                            <figure class="in_sensors_2 ">
+                                <figcaption class="figure-caption text-start " style="font-size: 2vw; font-family: 'Manrope-Semibold'; ">Напряжение</figcaption>
+                                <figure class="round " style="border-color: aqua; ">
+                                    <h2 class="title_curr ">{{ voltage }}</h2>
+                                </figure>
+                            </figure>
+                            <figure class="in_sensors_2 ">
+                                <figcaption class="figure-caption text-start " style="font-size: 2vw; font-family: 'Manrope-Semibold'; ">Тяга</figcaption>
+                                <figure class="round " style="border-color: aqua; ">
+                                    <h2 class="title_curr ">{{ traction }}</h2>
+                                </figure>
+                            </figure>
+                            <figure class="in_sensors_2 ">
+                                <figcaption class="figure-caption text-start " style="font-size: 2vw; font-family: 'Manrope-Semibold'; ">Ток нагревателя</figcaption>
+                                <figure class="round " style="border-color: aqua; ">
+                                    <h2 class="title_curr ">{{ amperage_n }}</h2>
+                                </figure>
+                            </figure>
+                        </div>
+
+
                     </div>
                 </figure>
             </div>
